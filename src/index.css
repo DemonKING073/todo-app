@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Oswald:wght@300&display=swap');
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+.box{
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  width: 60%;
+  margin: 0 auto;
+  margin-top:1em;
+  height: 80vh;
+}
+.app-header{
+  height:8vh;
+  display:flex;
+  background:lightblue;
+  justify-content: space-between;
+  
+}
+.app-header h1{
+  color:white;
+  margin:10px;
+}
+.icon{
+  align-items: center;
+  display:flex;
+}
+.todo-body{
+  position: relative;
+}
+.todo-body h1{
+  margin:1em;
+  font-family: Oswald;
+  font-weight: bolder;
+  color:#88ABA5 ;
+}
+.todo-body input{
+  font-size:1.5em;
+  margin-bottom:1em;
+  color:#686D6C ;
+}
+.todo-body textarea{
+  font-size:1em;
+  color:#686D6C ;
+  height:10vh;
+  width:30vw;
+  margin-bottom: 1.5em;
+}
+.todo-button{
+  cursor: pointer;
+  background: lightgreen;
+  border: none;
+  font-size: 1.5em;
+  color:white;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 1em;
+  right:1em;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo-button-div{
+  height: 13vh;
+}
+.todo-button:hover, .todo-button:focus{
+  background:lightseagreen;
+}
+
+.todo-item-div{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  height:8vh;
+  margin-bottom: 5px;
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.todo-item-div input{
+  margin: 10px;
+}
+.check-and-title{
+  display:flex;
+  font-weight: bold;
+  font-size:1.2em;
+  flex-direction: row;
+  align-items: center;
+  font-family: Oswald;
+}
+.del-btn{
+  font-size:1.2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px;
+  margin-right:.5em;
+  background:lightcoral;
+  border:none;
+  border-radius: 5px;
+  color:white;
+  cursor: pointer;
+}
+.del-btn:hover,.del-btn:focus{
+  background: red;
+}
+.add-btn{
+  font-size:2em;
+  border-radius: 5px;
+  background:#89F76C ;
+  color:white ;
+  padding:5px;
+  cursor: pointer;
+}
+.add-btn:hover,.add-btn:focus{
+  background:#5CF233 ;
+  color:white ;
+}
+.todo-body h2{
+  font-family: Oswald;
+  font-size:2.5em;
+  color:#88ABA5;
+  margin-bottom:1em;
+}
+.todo-body h2::after{
+  content:'';
+  display:block;
+  height:3px;
+  width:5em;
+  background:#6C8883   ;
+  margin: 0 auto;
+}
+.todo-body h3,h4{
+  font-family: Baloo Tamma 2;
+  font-size:1.2em;
+  font-weight: lighter;
+  margin-bottom:.5em;
+}
+.back-btn{
+  font-size:1.5em;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.back-btn:hover{
+  background:gray;
 }
